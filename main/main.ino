@@ -5,12 +5,13 @@
 void setup() {
     Serial.begin(9600);
     Serial.println();
+    Slang s;
+    s.tokenize("sten fn return sten sawsynth sinesynth");
+    s.printTokens();
 }
 
 void loop() {
-    Slang s;
-    s.tokenize("Sten ist cool fn return fn fn return sten fn sten return");
-    s.printTokens();
+    
 }
 
 
